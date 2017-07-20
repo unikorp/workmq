@@ -1,0 +1,16 @@
+{
+  "ports": {
+    "udp": ":10001",
+    "http": ":8080"
+  },
+  "queues": {
+    "queue.1s": {
+      "processor": "processor.logger.1s",
+      "num_workers": 150
+    },
+    "queue.2s": {
+      "processor": "processor.logger.2s",
+      "num_workers": 200
+    }
+  }
+}
